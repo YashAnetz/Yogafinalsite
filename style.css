@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("/yog21.jpg");
+  background-color: #cccccc;
+  height: 700px;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+
+  width: 100%;
+  font-family: "Mochiy Pop P One", sans-serif;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h1 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  width: 100%;
+
+  color: #db531d;
+}
+.hero-text h3 {
+  margin-bottom: 5px;
+  position: relative;
+
+  font-size: 30px;
+
+  width: 100%;
+  color: azure;
+}
+
+.hero-text button {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: none;
+  width: 300px;
+  color: white;
+  border: 1px white solid;
+}
+
+.hero-text button:hover {
+  background-color: white;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: black;
+}
+
+.logo {
+  position: relative;
+  top: -720px;
+  width: 180px;
+  left: 0px;
+}
+
+.logo2 {
+  position: relative;
+  top: -700px;
+  width: 160px;
+  float: right;
+}
+
+.upcoming {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  height: 200px;
+  top: -150px;
+}
+
+.events h1 {
+  position: relative;
+  align-items: center;
+  width: 250px;
+  left: 35%;
+  top: -100px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: auto auto auto auto;
+}
+
+.gridel {
+  background-color: rgb(112, 106, 106);
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 350px;
+  height: 200px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+
+  transition: 0.1s ease-in;
+}
+
+.gridel:hover {
+  transform: scale(1.1);
+}
+
+.gridel .gridimg {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.gridel h2 {
+  position: relative;
+  width: 300px;
+  background-color: rgb(32, 32, 32, 0.8);
+  z-index: 1;
+  color: #cccccc;
+  padding: 15px;
+  font-size: 20px;
+  transition: 0.1s ease-in;
+  height: 20px;
+  top: -75px;
+  margin: 10px;
+
+  border-radius: 20px;
+}
+.gridel h3 {
+  position: relative;
+  width: 320px;
+  background-color: #295e6dfb;
+  z-index: 1;
+  color: #ffffff;
+  padding: 15px;
+  transition: 0.1s ease-in;
+  height: 120px;
+  top: -205px;
+  display: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  margin: 0px;
+}
+
+.gridel:hover h2 {
+  top: -205px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: rgb(255, 255, 255);
+}
+
+.gridel:hover h3 {
+  display: block;
+}
+
+.gridel .mode {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 20px;
+  display: none;
+  margin: 10px;
+  text-align: center;
+  top: -350px;
+  background-color: rgb(99, 173, 55);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.gridel .dur {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  display: none;
+  border-radius: 10px;
+  padding: 5px;
+  height: 20px;
+  margin: 10px;
+  text-align: center;
+  top: -350px;
+  background-color: rgb(241, 158, 79);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gridel .status {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 20px;
+  top: -265px;
+  left: 160px;
+  margin: 10px;
+  text-align: center;
+
+  background-color: rgb(55, 159, 173);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gridel .next {
+  position: relative;
+  width: 100px;
+  top: -440px;
+  left: 240px;
+  z-index: 2;
+  display: none;
+}
+
+.gridel .next:hover {
+  transform: scale(1.1);
+}
+
+.gridel:hover .mode {
+  display: block;
+}
+
+.gridel:hover .next {
+  display: block;
+  z-index: 1;
+}
+.gridel:hover .dur {
+  display: block;
+}
+
+.gridel:hover .status {
+  display: block;
+  top: -350px;
+  left: 0px;
+}
+
+.upcoming h1 {
+  text-align: center;
+  width: 400px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+  font-family: "Odibee Sans", cursive;
+  background-color: rgb(207, 95, 51);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.upcoming h2 {
+  padding: 5px;
+  text-align: center;
+
+  width: 400px;
+
+  font-size: 20px;
+  background-color: rgb(202, 183, 175);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.upcoming button {
+  position: relative;
+  left: 30px;
+  padding: 10px;
+  height: 50px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid coral;
+}
+
+.award h1 {
+  position: relative;
+  align-items: center;
+  width: 700px;
+  left: 35%;
+  margin: 20px;
+  top: 0px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.gride2 {
+  background: none;
+  position: relative;
+  border-radius: 20px;
+
+  width: 350px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  transition: 0.1s ease-in;
+}
+
+.gride2 img {
+  position: relative;
+  width: 20rem;
+}
+
+.gride2 .n2 {
+  position: relative;
+  width: 10rem;
+}
+
+.gride2 button {
+  position: relative;
+  padding: 20px;
+  background: none;
+  top: 150px;
+  border: 3px red solid;
+  border-radius: 40px;
+}
+
+.gride2 h2 {
+  position: relative;
+
+  background: none;
+  font-size: 20px;
+  margin: 4px;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+
+  text-align: center;
+}
+
+.review h1 {
+  position: relative;
+  align-items: center;
+  width: 700px;
+  left: 35%;
+  margin: 50px;
+  top: 150px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.gridr {
+  background: rgb(146, 146, 146);
+  position: relative;
+  border-radius: 20px;
+  top: 150px;
+  width: 300px;
+  height: 400px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  transition: 0.1s ease-in;
+}
+
+/*
+
+MOBILE
+
+
+███╗░░░███╗░█████╗░██████╗░██╗██╗░░░░░███████╗
+████╗░████║██╔══██╗██╔══██╗██║██║░░░░░██╔════╝
+██╔████╔██║██║░░██║██████╦╝██║██║░░░░░█████╗░░
+██║╚██╔╝██║██║░░██║██╔══██╗██║██║░░░░░██╔══╝░░
+██║░╚═╝░██║╚█████╔╝██████╦╝██║███████╗███████╗
+╚═╝░░░░░╚═╝░╚════╝░╚═════╝░╚═╝╚══════╝╚══════╝
+
+MOBILE*/
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .gridel {
+    background-color: rgb(112, 106, 106);
+    position: relative;
+    border-radius: 20px;
+
+    width: 300px;
+    margin: 30px;
+    height: 200px;
+  }
+
+  .gridel:hover {
+    transform: scale(1.05);
+  }
+
+  .gridel .gridimg {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .gridel h2 {
+    position: relative;
+    width: 250px;
+    font-size: 15px;
+    background-color: rgb(32, 32, 32, 0.8);
+    z-index: 1;
+    color: #cccccc;
+    padding: 15px;
+    height: 20px;
+    top: -75px;
+    margin: 10px;
+
+    border-radius: 20px;
+  }
+
+  .gridel:hover h2 {
+    top: -205px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    width: 270px;
+    background-color: rgba(98, 189, 231, 0.705);
+    color: rgb(0, 0, 0);
+  }
+  .gridel h3 {
+    width: 270px;
+    height: 121px;
+  }
+
+  .gridel .mode {
+    position: relative;
+    z-index: 1;
+    width: 160px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+    top: -350px;
+    background-color: rgb(99, 173, 55);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .gridel .dur {
+    position: relative;
+    z-index: 1;
+    width: 160px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    height: 20px;
+    margin: 10px;
+    top: -350px;
+    background-color: chocolate;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .gridel .status {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    height: 20px;
+
+    margin: 10px;
+    top: -280px;
+    background-color: rgb(30, 210, 99);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .upcoming button {
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid coral;
+  }
+
+  .upcoming h1 {
+    width: 100%;
+  }
+
+  .upcoming h2 {
+    width: 100%;
+  }
+  .gridel:hover .status {
+    display: block;
+    top: -350px;
+    left: 0px;
+  }
+
+  .logo {
+    position: relative;
+    top: -720px;
+    width: 120px;
+    margin: 20px;
+    left: 0px;
+  }
+
+  .logo2 {
+    position: relative;
+    top: -710px;
+    width: 110px;
+    margin: 20px;
+    float: right;
+  }
+
+  .events h1 {
+    position: relative;
+    align-items: center;
+    width: 190px;
+    left: 20%;
+    top: -100px;
+    font-size: 20px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+
+  .hero-text h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    width: 100%;
+    color: #fad585;
+  }
+  .hero-text h3 {
+    margin-bottom: 5px;
+    position: relative;
+
+    font-size: 20px;
+
+    width: 100%;
+    color: azure;
+  }
+
+  .hero-text button {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: none;
+    width: 300px;
+    color: white;
+    border: 1px white solid;
+  }
+
+  .gridel .next {
+    position: relative;
+    width: 100px;
+    top: -440px;
+    left: 190px;
+    z-index: 2;
+    display: none;
+  }
+
+  .upcoming {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 94%;
+    height: 200px;
+    top: -150px;
+  }
+
+  .award h1 {
+    position: relative;
+    align-items: center;
+    width: 250px;
+    left: 10%;
+    font-size: 20px;
+    margin: 20px;
+    top: 0px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+
+  .gride2 {
+    margin-bottom: 200px;
+  }
+
+  .review h1 {
+    position: relative;
+    align-items: center;
+    width: 250px;
+    font-size: 20px;
+    left: 5%;
+    margin: 10px;
+    top: -150px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+
+  .gridr {
+    position: relative;
+    top: -100px;
+  }
+}
