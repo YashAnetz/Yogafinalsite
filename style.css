@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 30%;
 
   width: 100%;
   font-family: "Mochiy Pop P One", sans-serif;
@@ -96,6 +96,7 @@ body {
   position: relative;
   width: 100%;
   height: 200px;
+  font-family: "Lexend Deca", sans-serif;
   top: -150px;
 }
 
@@ -274,7 +275,7 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
-  font-family: "Odibee Sans", cursive;
+  font-family: "Lexend Deca", sans-serif;
   background-color: rgb(207, 95, 51);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -319,8 +320,9 @@ body {
   border-radius: 20px;
 
   width: 350px;
+  font-family: "Lexend Deca", sans-serif;
   height: 200px;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-top: 20px;
   margin-bottom: 40px;
 
@@ -353,7 +355,7 @@ body {
   font-size: 20px;
   margin: 4px;
   width: 90%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 
   text-align: center;
 }
@@ -369,17 +371,284 @@ body {
 }
 
 .gridr {
-  background: rgb(146, 146, 146);
+  background: rgb(230, 230, 230);
   position: relative;
   border-radius: 20px;
   top: 150px;
   width: 300px;
-  height: 400px;
-  margin-left: 30px;
+  height: 410px;
+  margin-left: 60px;
   margin-top: 20px;
   margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   transition: 0.1s ease-in;
+}
+
+.gridr .rda {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.gridr .rda4 {
+  position: relative;
+  width: 300px;
+  height: inherit;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.gridr h2 {
+  padding: 10px;
+  font-size: 16px;
+  top: -5px;
+  position: relative;
+  font-family: "Lexend Deca", sans-serif;
+}
+.gridr h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+  padding-left: 10px;
+  background-color: rgb(119, 119, 119);
+  top: -10px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.gridr h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  padding-left: 10px;
+  top: -10px;
+  position: relative;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.gridr button {
+  position: relative;
+  top: -240px;
+  padding: 20px;
+  width: 100%;
+  background: rgb(69, 161, 247);
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.gridr:hover {
+  transform: scale(1.02);
+}
+
+.gridr button:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(231, 231, 231);
+}
+
+.taskbar .home {
+  position: relative;
+  width: 130px;
+  padding: 10px;
+  background: none;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  border: 2px rgb(34, 14, 9) double;
+  color: rgb(0, 0, 0);
+  font-family: "Lexend Deca";
+  font-weight: bolder;
+  top: 35px;
+  left: 12%;
+}
+.taskbar button {
+  position: relative;
+  width: 130px;
+  padding: 10px;
+  background: none;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: "Lexend Deca";
+  font-weight: bolder;
+  border-bottom: 2px tomato double;
+  color: rgb(0, 0, 0);
+
+  top: 35px;
+  left: 12%;
+}
+.taskbar button:hover {
+  transform: scale(1.1);
+}
+
+.taskbar .trans {
+  position: relative;
+  width: 160px;
+  padding: 5px;
+  margin: 10px;
+  top: -40px;
+  left: 77%;
+  border: orangered 2px solid;
+}
+
+.menub {
+  display: none;
+}
+
+.gallery h1 {
+  position: relative;
+  align-items: center;
+  width: 230px;
+  left: 45%;
+  margin: 20px;
+  top: 140px;
+  padding: 10px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.gridg {
+  background: rgb(230, 230, 230);
+  position: relative;
+
+  top: 150px;
+  width: 420px;
+  height: 200px;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  transition: 0.1s ease-in;
+}
+
+.gridg .imgo {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.gridg .nx {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  top: -205px;
+}
+
+.gridg .nx:hover {
+  transform: scale(1s);
+  color: grey;
+}
+
+.teacher h1 {
+  position: relative;
+  align-items: center;
+  width: 170px;
+  left: 45%;
+  margin: 20px;
+  top: 140px;
+  padding: 10px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.gridi {
+  background: rgb(230, 230, 230);
+  position: relative;
+  border-radius: 20px;
+  top: 150px;
+  width: 700px;
+  height: 410px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  transition: 0.1s ease-in;
+}
+
+.gridi img {
+  position: relative;
+  width: 200px;
+  margin: 20px;
+}
+
+.gridi h2 {
+  position: relative;
+  width: 400px;
+  margin: 20px;
+  left: 300px;
+  top: -200px;
+  font-size: 30px;
+  font-family: "Lexend Deca";
+}
+
+.grida {
+  display: grid;
+  width: 400px;
+  grid-template-columns: auto auto auto;
+}
+
+.grida .degv {
+  position: relative;
+  width: 440px;
+  height: 20px;
+  margin: 5px;
+  left: 250px;
+  top: -190px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  color: white;
+
+  width: 120px;
+  padding: 8px;
+
+  font-family: "Lexend Deca";
+}
+
+.I {
+  background-color: tomato;
+}
+
+.II {
+  background-color: turquoise;
+}
+
+.III {
+  background-color: violet;
+}
+
+.IV {
+  background-color: greenyellow;
+}
+
+.V {
+  background-color: indianred;
+}
+
+.teacher h4 {
+  position: relative;
+  margin: 20px;
+  font-family: "Lexend Deca";
+
+  top: -150px;
 }
 
 /*
@@ -397,9 +666,155 @@ MOBILE
 MOBILE*/
 
 @media only screen and (max-width: 600px) {
+  .teacher h4 {
+    position: relative;
+    margin: 20px;
+    font-family: "Lexend Deca";
+    width: 170px;
+    left: 160px;
+    top: -360px;
+  }
+
+  .teacher button {
+    position: relative;
+    padding: 5px;
+    top: -180px;
+    left: 50px;
+    background: none;
+    border-radius: 20px;
+    border: black 2px solid;
+  }
+  .grida {
+    display: grid;
+    width: 100px;
+    grid-template-columns: auto;
+  }
+
+  .grida .degv {
+    position: relative;
+    width: 440px;
+    height: 20px;
+    margin: 5px;
+    left: 20px;
+    top: -80px;
+    font-size: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+    color: white;
+
+    width: 120px;
+    padding: 8px;
+
+    font-family: "Lexend Deca";
+  }
+
+  .gridi img {
+    position: relative;
+    width: 100px;
+    margin: 20px;
+  }
+
+  .gridi h2 {
+    position: relative;
+    width: 210px;
+    margin: 20px;
+    left: 115px;
+    top: -110px;
+    font-size: 25px;
+    font-family: "Lexend Deca";
+  }
+  .gallery h1 {
+    position: relative;
+    align-items: center;
+    width: 150px;
+    font-size: 20px;
+    left: 27%;
+    margin: 20px;
+    top: -100px;
+    padding: 10px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+  .teacher h1 {
+    position: relative;
+    align-items: center;
+    width: 150px;
+    font-size: 20px;
+    left: 27%;
+    margin: 20px;
+    top: 90px;
+    padding: 10px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+
+  .gridi {
+    background: rgb(230, 230, 230);
+    position: relative;
+    border-radius: 20px;
+    top: 150px;
+    width: 370px;
+    height: 480px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    transition: 0.1s ease-in;
+  }
+  .gridg {
+    background: rgb(230, 230, 230);
+    position: relative;
+
+    top: 10px;
+    box-shadow: 1px 1px -1px 1px;
+
+    width: 400px;
+    height: 200px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    transition: 0.1s ease-in;
+  }
+
+  .gridg .imgo {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  .gridg .nx {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    top: -205px;
+  }
+
+  .gridg .nx:hover {
+    color: grey;
+  }
+  .menub {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 20px;
+    z-index: 5;
+    left: 194px;
+    top: 10px;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: auto;
+    margin: 2%;
+    align-items: center;
   }
 
   .gridel {
@@ -408,7 +823,7 @@ MOBILE*/
     border-radius: 20px;
 
     width: 300px;
-    margin: 30px;
+
     height: 200px;
   }
 
@@ -487,14 +902,14 @@ MOBILE*/
     position: relative;
     z-index: 1;
     width: 150px;
-
+    left: 0px;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
     height: 20px;
 
     margin: 10px;
-    top: -280px;
+    top: -265px;
     background-color: rgb(30, 210, 99);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -550,11 +965,15 @@ MOBILE*/
     font-size: 20px;
     border-bottom: rgb(248, 45, 45) 4px solid;
   }
-
+  .hero-text {
+    position: relative;
+    top: 300px;
+  }
   .hero-text h1 {
     margin-bottom: 20px;
     font-size: 2rem;
     width: 100%;
+
     color: #fad585;
   }
   .hero-text h3 {
@@ -623,5 +1042,49 @@ MOBILE*/
   .gridr {
     position: relative;
     top: -100px;
+  }
+
+  .taskbar {
+    position: relative;
+    width: 370px;
+    left: 5%;
+    top: -16px;
+    height: 600px;
+    display: none;
+    transition: 2s ease-in;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+    animation: menu 1s;
+    background-color: rgb(104, 104, 104, 0.9);
+  }
+
+  @keyframes menu {
+    0% {
+      top: -500px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  .taskbar .home {
+    position: relative;
+    left: 70px;
+    width: 200px;
+    color: white;
+  }
+
+  .taskbar button {
+    position: relative;
+    left: 70px;
+    width: 200px;
+    color: white;
+  }
+
+  .taskbar .trans {
+    position: relative;
+    top: 40px;
+    left: 90px;
   }
 }
