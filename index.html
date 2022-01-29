@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -13,12 +17,12 @@
 
       <div class="taskbar" id="tb">
         <button class="home" id="home">Home</button>
-        <button>Events</button>
-        <button>Awards</button>
-        <button>Reviews</button>
-        <button>Gallery</button>
-        <button>Instructors</button>
-        <button>Contact</button>
+        <button class="tb">Events</button>
+        <button class="tb">Awards</button>
+        <button class="tb">Reviews</button>
+        <button class="tb">Gallery</button>
+        <button class="tb">Instructors</button>
+        <button class="tb">Contact</button>
         <div id="google_translate_element" class="trans"></div>
         <script type="text/javascript">
           function googleTranslateElementInit() {
@@ -33,6 +37,7 @@
           type="text/javascript"
           src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         ></script>
+        <button class="close" id="close">x</button>
       </div>
 
       <div class="hero-text">
@@ -51,7 +56,7 @@
       <h2>Kids Yoga <button>learn more / Register</button></h2>
       <h2>Weight Control<button>learn more / Register</button></h2>
     </div>
-    <div class="events">
+    <div class="events" id="#event" \>
       <h1>EVENTS / उपक्रम</h1>
       <div class="grid">
         <div class="gridel">
@@ -216,7 +221,7 @@
       <h1>Instructors</h1>
       <div class="grid">
         <div class="gridi">
-          <img src="/in1.png" />
+          <img src="/vaishali.jpg" />
           <h2>Mrs. Vaishali Ahire</h2>
           <div class="grida">
             <h3 class="degv I">Yog Shikshak</h3>
@@ -224,19 +229,21 @@
             <h3 class="degv III">Yog Adyapak</h3>
             <h3 class="degv IV">Yog Adyapak</h3>
             <h3 class="degv V">Yog Adyapak</h3>
-            <h3 class="degv VI">View Profile</h3>
+            <h3 class="view">View Profile ></h3>
           </div>
           <h4>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has and scrambled
-            it to make a type specimen book. It has and scrambled it to make a
-            type specimen book. It has
+            Vaishali Ahire has completed Yoga Certification Board YCB Level-3
+            examination and recognised as Yoga Teacher and Evaluator.She has
+            conducted various Yoga sessions offline as well as online mode.She
+            conducted seven Yog Pravesh classes,two Yog Parichay classes and has
+            taught yoga over 250 students through various Yoga sessions of
+            Surynamkaskar,Atma vishwas sawanrdhan,Pranayam.She was instrumental
+            in delivering special session of Pranayam for COVID patients at
+            Covid Care Centre, MPKV, Rahuri.
           </h4>
         </div>
         <div class="gridi">
-          <img src="/in1.png" />
+          <img src="/milind.jpg" />
           <h2>Dr. Milind Ahire</h2>
           <div class="grida">
             <h3 class="degv I">Yog Shikshak</h3>
@@ -244,20 +251,68 @@
             <h3 class="degv III">Yog Adyapak</h3>
             <h3 class="degv IV">Yog Adyapak</h3>
             <h3 class="degv V">Yog Adyapak</h3>
-            <h3 class="degv VI">View Profile</h3>
+            <h3 class="view">View Profile ></h3>
           </div>
           <h4>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has and scrambled
-            it to make a type specimen book. It has and scrambled it to make a
-            type specimen book. It has
+            Milind Ahire has completed Yoga Teacher from Yoga Vidya Gurukul .He
+            has conducted various Yoga sessions offline as well as online mode
+            as Assistant Yoga Teacher.He has assisted in seven Yog Pravesh
+            classes,two Yog Parichay classes and has taught yoga over 150
+            students through various Yoga sessions of Surynamkaskar, Pranayam.
+            He participated special session of Pranayam for COVID patients at
+            Covid Care Centre, MPKV, Rahuri.
           </h4>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <div class="grid">
+        <div class="gridc">
+          <h2>7588513340</h2>
+          <img src="/whats.png" />
+        </div>
+        <div class="gridc">
+          <h2>7588513341</h2>
+          <img src="/call.png" />
+        </div>
+        <div class="gridc">
+          <h2>contact@niramay.com</h2>
+          <img src="/mail.png" />
+        </div>
+        <div class="gridc">
+          <h2>M.P.K.V , Rahuri 413722</h2>
+          <img src="/pin.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="grid">
+        <div class="gridf">
+          <img class="footlog" src="/niramaylogo.png" />
+          <h2>Niramay Yog kendra</h2>
+          <h3>NiramayYogKendra ©2022</h3>
+          <h4>Site by - <button class="yash">Yash Ahire</button></h4>
+        </div>
+        <div class="gridf">
+          <img class="quick" src="nx.png" />
+
+          <h5>Quick Links</h5>
+          <div class="butf">
+            <button class="tbf">Home</button>
+            <button class="tbf">Events</button>
+            <button class="tbf">Awards</button>
+            <button class="tbf">Reviews</button>
+            <button class="tbf">Gallery</button>
+            <button class="tbf">Instructors</button>
+            <button class="tbf">Contact</button>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="yog.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   </body>
 </html>
