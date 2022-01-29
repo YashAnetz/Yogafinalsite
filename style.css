@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -468,7 +469,7 @@ body {
   top: 35px;
   left: 12%;
 }
-.taskbar button {
+.taskbar .tb {
   position: relative;
   width: 100px;
   padding: 10px;
@@ -583,7 +584,9 @@ body {
 
 .gridi img {
   position: relative;
-  width: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin: 20px;
 }
 
@@ -591,8 +594,8 @@ body {
   position: relative;
   width: 400px;
   margin: 20px;
-  left: 300px;
-  top: -200px;
+  left: 190px;
+  top: -170px;
   font-size: 30px;
   font-family: "Lexend Deca";
 }
@@ -608,12 +611,10 @@ body {
   width: 440px;
   height: 20px;
   margin: 5px;
-  left: 250px;
+  left: 200px;
   top: -190px;
-  font-size: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   color: white;
 
@@ -623,34 +624,196 @@ body {
   font-family: "Lexend Deca";
 }
 
+.grida .view {
+  position: relative;
+  width: 440px;
+  background-color: rgba(92, 194, 122, 0.767);
+  height: 20px;
+  margin: 5px;
+  font-family: "Lexend Deca";
+  left: 200px;
+  font-size: 10px;
+  top: -190px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  font-size: 20px;
+
+  border-radius: 10px;
+  color: rgb(15, 14, 14);
+
+  width: 120px;
+  padding: 8px;
+}
 .I {
-  background-color: tomato;
+  background-color: #dbd56e;
 }
 
 .II {
-  background-color: turquoise;
+  background-color: #88ab75;
 }
 
 .III {
-  background-color: violet;
+  background-color: #2d93ad;
 }
 
 .IV {
-  background-color: greenyellow;
+  background-color: #7d7c84;
 }
 
 .V {
-  background-color: indianred;
+  background-color: #de8f6e;
 }
 
 .teacher h4 {
   position: relative;
   margin: 20px;
   font-family: "Lexend Deca";
-
-  top: -150px;
+  font-size: 20px;
+  top: -200px;
 }
 
+.contact h1 {
+  position: relative;
+  align-items: center;
+  width: 170px;
+  left: 45%;
+  margin: 20px;
+  top: 140px;
+  padding: 10px;
+  border-bottom: rgb(248, 45, 45) 4px solid;
+}
+
+.gridc {
+  background: rgb(230, 230, 230);
+  position: relative;
+  border-radius: 20px;
+  top: 150px;
+  width: 300px;
+  background-color: coral;
+  height: 70px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  transition: 0.1s ease-in;
+}
+
+.gridc img {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  margin: 8px;
+  left: -30px;
+  top: -23px;
+
+  border-radius: 50%;
+}
+
+.gridc h2 {
+  position: relative;
+  left: 60px;
+  font-size: 20px;
+  font-family: "Lexend Deca";
+  top: 23px;
+}
+
+.close {
+  display: none;
+}
+
+.footer {
+  background-color: rgb(65, 65, 65);
+  position: relative;
+  top: 200px;
+  margin-bottom: -70px;
+}
+
+.gridf {
+  position: relative;
+
+  top: 0px;
+  width: 500px;
+  font-family: "Lexend Deca";
+  height: 150px;
+  margin: 20px;
+
+  left: 50px;
+
+  transition: 0.1s ease-in;
+}
+
+.gridf .footlog {
+  position: relative;
+  width: 200px;
+  top: -40px;
+}
+
+.gridf h2 {
+  position: relative;
+  top: -180px;
+  color: white;
+  font-size: 30px;
+  left: 200px;
+}
+.gridf h3 {
+  position: relative;
+  top: -180px;
+  color: gray;
+  font-size: 20px;
+  left: 200px;
+}
+.gridf h4 {
+  position: relative;
+  top: -180px;
+  color: #edecf1;
+  font-size: 20px;
+  left: 200px;
+}
+
+.gridf .yash {
+  position: relative;
+  background: none;
+  font-size: 20px;
+  border: 2px orangered dotted;
+  color: #cccccc;
+}
+
+.quick {
+  position: relative;
+  width: 100px;
+  top: 20px;
+}
+.gridf h5 {
+  position: relative;
+  top: -80px;
+  left: 110px;
+  font-size: 30px;
+  color: #cccccc;
+}
+
+.butf {
+  position: relative;
+  top: -80px;
+  left: 110px;
+  padding: 5px;
+  margin: 5px;
+  width: 440px;
+  background: none;
+  border: 2px dotted cornflowerblue;
+}
+
+.gridf .tbf {
+  position: relative;
+  padding: 5px;
+  background: none;
+  color: #cccccc;
+  border: none;
+}
 /*
 
 MOBILE
@@ -666,13 +829,152 @@ MOBILE
 MOBILE*/
 
 @media only screen and (max-width: 600px) {
+  .footer {
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    top: 200px;
+    height: 400px;
+
+    width: 410px;
+    margin-bottom: -70px;
+  }
+  .gridf {
+    position: relative;
+
+    top: 0px;
+    width: 150px;
+    font-family: "Lexend Deca";
+    height: 150px;
+    margin: 20px;
+
+    left: 50px;
+
+    transition: 0.1s ease-in;
+  }
+
+  .gridf .footlog {
+    position: relative;
+    width: 150px;
+    top: -20px;
+    left: -50px;
+  }
+
+  .gridf h2 {
+    position: relative;
+    top: -140px;
+    left: 100px;
+    color: white;
+    font-size: 20px;
+
+    width: 200px;
+  }
+  .gridf h3 {
+    position: relative;
+    top: -140px;
+    left: 100px;
+    color: gray;
+    font-size: 15px;
+
+    width: 150px;
+  }
+  .gridf h4 {
+    position: relative;
+    top: -140px;
+    left: 100px;
+    color: #edecf1;
+    font-size: 15px;
+
+    width: 150px;
+  }
+
+  .gridf .yash {
+    position: relative;
+    background: none;
+    font-size: 20px;
+    border: 2px orangered dotted;
+    color: #cccccc;
+  }
+
+  .quick {
+    position: relative;
+    width: 100px;
+    top: 20px;
+    left: -20px;
+  }
+  .gridf h5 {
+    position: relative;
+    top: -80px;
+    left: 100px;
+    font-size: 20px;
+    width: 150px;
+    color: #cccccc;
+  }
+
+  .butf {
+    position: relative;
+    top: -80px;
+    left: 90px;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    background: none;
+    border: 2px dotted cornflowerblue;
+  }
+
+  .gridf .tbf {
+    position: relative;
+
+    background: none;
+
+    color: #cccccc;
+    border: none;
+  }
+  .contact h1 {
+    position: relative;
+    align-items: center;
+    width: 120px;
+    font-size: 20px;
+    left: 27%;
+    margin: 20px;
+    top: 150px;
+    padding: 10px;
+    border-bottom: rgb(248, 45, 45) 4px solid;
+  }
+
+  .contact h2 {
+    position: relative;
+
+    width: 250px;
+  }
+  .gridc {
+    position: relative;
+    margin-bottom: -10px;
+  }
+  .close {
+    position: relative;
+    display: block;
+    left: 6px;
+    font-size: 25px;
+    border: 2px rgb(221, 73, 15) solid;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+
+    background: none;
+  }
+
+  .close:hover {
+    background-color: cadetblue;
+  }
   .teacher h4 {
     position: relative;
     margin: 20px;
     font-family: "Lexend Deca";
     width: 170px;
     left: 160px;
-    top: -360px;
+    font-size: 15px;
+    top: -400px;
   }
 
   .teacher button {
@@ -709,9 +1011,29 @@ MOBILE*/
     font-family: "Lexend Deca";
   }
 
+  .grida .view {
+    position: relative;
+    width: 440px;
+    height: 20px;
+    margin: 5px;
+    left: 20px;
+    top: 100px;
+    font-size: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+    color: white;
+
+    width: 120px;
+    padding: 8px;
+
+    font-family: "Lexend Deca";
+  }
+
   .gridi img {
     position: relative;
     width: 100px;
+    height: 100px;
     margin: 20px;
   }
 
@@ -721,7 +1043,7 @@ MOBILE*/
     margin: 20px;
     left: 115px;
     top: -110px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Lexend Deca";
   }
   .gallery h1 {
@@ -753,7 +1075,7 @@ MOBILE*/
     border-radius: 20px;
     top: 150px;
     width: 370px;
-    height: 520px;
+    height: 600px;
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -1076,7 +1398,7 @@ MOBILE*/
     color: white;
   }
 
-  .taskbar button {
+  .taskbar .tb {
     position: relative;
     left: 70px;
     width: 200px;
